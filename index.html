@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorlan's Tavern</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Dorlan's Tavern</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food-menu">Food Menu</a></li>
+                <li><a href="#drink-menu">Drink Menu</a></li>
+                <li><a href="#events">Parties & Events</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" id="hamburger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <!-- Fullscreen Overlay Menu -->
+        <div class="overlay" id="overlay-menu">
+            <ul class="overlay-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food-menu">Food Menu</a></li>
+                <li><a href="#drink-menu">Drink Menu</a></li>
+                <li><a href="#events">Parties & Events</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        
+        <div class="hero-text">
+            <h1>Welcome to Dorlan's Tavern</h1>
+            <p>Where history meets flavor at the South Street Seaport.</p>
+            <a href="#food-menu" class="animated-btn">Explore Menus</a>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Dorlan's Tavern, a cozy neighborhood spot, is known for its warm atmosphere and delicious offerings. Nestled in the heart of the Historic South Street Seaport, we’re the perfect place for a casual hangout or a memorable celebration.</p>
+            <p><strong>Address:</strong> 213 Front St, New York, NY 10038</p>
+            <p><strong>Phone:</strong> 212.779.2222</p>
+            <p><strong>Hours:</strong> Sun-Wed (Until 1AM) | Thu-Sat (Until 2AM)</p>
+        </div>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section id="food-menu" class="menu">
+        <div class="container">
+            <h2>Our Food Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://i0.wp.com/www.melissassouthernstylekitchen.com/wp-content/uploads/2020/07/BuffaloShrimpfeature.jpg?fit=1200%2C1200&ssl=1" alt="Buffalo Shrimp">
+                    <h3>Buffalo Shrimp</h3>
+                    <p>Tossed in house-made buffalo sauce with blue cheese.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://img.freepik.com/premium-photo/loaded-nacho-platter-with-melted-cheese-jalapenos-sour-cream-guacamole-salsa_328432-28686.jpg?w=360" alt="Pepperjack Cheese Nachos">
+                    <h3>Pepperjack Cheese Nachos</h3>
+                    <p>Salsa, guacamole, sour cream; add chicken, chorizo, or steak.</p>
+                </div>
+                <!-- Add more menu items similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Drink Menu Section -->
+    <section id="drink-menu" class="menu">
+        <div class="container">
+            <h2>Our Drink Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2019/12/goods_cocktails.jpg" alt="Cocktail">
+                    <h3>Signature Cocktails</h3>
+                    <p>Crafted with care, featuring unique flavors.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://toppng.com/public/uploads/preview/transparent-beer-draft-draft-beer-glass-11562873951q9naj1s1bu.png" alt="Draft Beer">
+                    <h3>Draft Beers</h3>
+                    <p>Refreshing selection on tap.</p>
+                </div>
+                <!-- Add more drink items similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Parties & Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Host Your Event</h2>
+            <p>Plan your next party at Dorlan's Tavern. Whether it's a birthday, corporate event, or celebration, we’ve got you covered.</p>
+            <a href="#contact" class="btn-primary">Inquire Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+            <div class="map">
+                <!-- Embed Google Map -->
+                <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
