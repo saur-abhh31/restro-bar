@@ -9,7 +9,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   color: #f0f0f0; /* Light text for readability */
-  background-color: #121212; /* Dark background for the entire website */
+  background-color: #181818; /* Dark background for the entire website */
 }
 /* Sticky Header */
 header {
@@ -34,8 +34,9 @@ header.sticky {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #222;
+  background: #202020;
   color: #fff;
+  border-bottom: 1px solid #333;
 }
 .nav-links {
   list-style: none;
@@ -48,8 +49,12 @@ header.sticky {
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: #e0e0e0;
   font-weight: 700;
+}
+
+.nav-links a:hover{
+    color:#ff8800;
 }
 
 /* Hamburger Icon */
@@ -133,9 +138,13 @@ header.sticky {
 
 /* Hero Section */
 .hero {
-  background: url("https://www.luxxu.net/blog/wp-content/uploads/2017/03/10-Luxury-Bar-Lighting-Ideas-10.jpg")
-    no-repeat center center/cover;
-  color: #fff;
+   background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://www.luxxu.net/blog/wp-content/uploads/2017/03/10-Luxury-Bar-Lighting-Ideas-10.jpg")
+      no-repeat center center/cover;
+  color: #ffffff;
   text-align: center;
   padding: 5rem 1rem;
   height: 70vh;
@@ -178,7 +187,7 @@ header.sticky {
     font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
+    color: #121212;
     background: #ff8800;
     border: none;
     border-radius: 10px;
@@ -189,13 +198,71 @@ header.sticky {
   }
   
   .animated-btn:hover {
-    background: #fff;
+    background: #ffffff;
     color: #ff8800;
     transform: scale(1.1);
   }
 
 
+/* About Us Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #1f1f1f;
+    color: #ffffff;
+}
 
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff8800; /* Orange accent color */
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.about .about-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about .about-details div {
+    text-align: center;
+    width: 250px;
+    background: #262626; /* Slightly lighter black */
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about .about-details div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.about .about-details div i {
+    font-size: 2rem;
+    color: #ff8800; /* Icon color */
+    margin-bottom: 10px;
+}
+
+.about .about-details div h4 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #ff8800;
+}
+
+.about .about-details div p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+  
 /* Section Styling */
 section {
   padding: 4rem 1rem;
@@ -221,7 +288,7 @@ p {
 .menu-item {
   margin: 1rem;
   max-width: 300px;
-  background-color: #2c2c2c; /* Dark background for menu items */
+  background-color: #292929; /* Dark background for menu items */
   border-radius: 10px;
   padding: 1rem;
   transition: transform 0.3s ease;
@@ -239,53 +306,163 @@ p {
 
 .menu-item h3 {
   margin: 1rem 0;
-  color: #ff4081; /* Neon pink for item titles */
+  color: #ff8800; /* Neon pink for item titles */
 }
 
-/* Contact Section */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  margin: 0.5rem 0;
-  padding: 0.7rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #1f1f1f; /* Darker input fields */
-  color: #fff;
+
+
+/* Parties & Events Section */
+.events {
+    padding: 50px 20px;
+    text-align: center;
+    background: #1f1f1f;
 }
 
-.contact-form button {
-  background: #ff4081; /* Neon pink for submit button */
-  color: #fff;
-  padding: 0.7rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background 0.3s ease;
+.events h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff8800; /* Orange accent color */
 }
 
-.contact-form button:hover {
-  background: #ff00b3; /* Hover effect for button */
+.events p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
 }
 
-.map iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  border-radius: 10px;
+.events-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
+
+.event-card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #292929; /* Subtle light background for cards */
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card h4 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #ff8800;
+}
+
+.event-card p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #555;
+}
+
+/* Contact Us Section */
+.contact {
+    background: #1e1e1e; /* Dark background for the section */
+    padding: 50px 20px;
+    color: #f0f0f0; /* Light text for readability */
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff8800; /* Orange accent for headings */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background: #333; /* Dark input background */
+    color: #fff; /* Light text for inputs */
+    font-size: 1rem;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #bbb; /* Light placeholder text */
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    background-color: #444;
+    box-shadow: 0 0 8px rgba(255, 136, 0, 0.5); /* Glow effect on focus */
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: none; /* Disable resizing */
+  }
+  
+  .contact-form button {
+    background: #ff8800;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #fff;
+    color: #ff8800;
+    transform: scale(1.05);
+  }
+  
+  .map {
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for the map */
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  
 
 /* Footer Styling */
 footer {
-  background-color: #1e1e1e; /* Dark background for footer */
-  color: #ccc;
+  background-color: #202020; /* Dark background for footer */
+  color: #e0e0e0;
   padding: 20px;
   text-align: center;
 }
 
 footer a {
-  color: #ff4081; /* Neon pink footer links */
+  color: #ff8800; /* Neon pink footer links */
 }
 
 footer a:hover {
